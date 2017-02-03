@@ -29,5 +29,7 @@ def okay_two_sum?(arr, target)
 end
 
 def good_two_sum?(arr, target)
-  
+  diffs_from_target = {}
+  arr.each { |el| diffs_from_target[el] = el - target }
+  diffs_from_target.values.any? { |val| diffs_from_target[val] }
 end
