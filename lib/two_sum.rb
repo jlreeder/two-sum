@@ -8,3 +8,23 @@ def bad_two_sum?(arr, target)
 
   false
 end
+
+def okay_two_sum?(arr, target)
+  sorted = arr.sort
+
+  idx1 = 0
+  idx2 = arr.length - 1
+
+  until idx1 >= idx2
+    case arr[idx1] + arr[idx2] <=> target
+    when -1
+      idx1 += 1
+    when 0
+      return true
+    when 1
+      idx2 -= 1
+    end
+  end
+
+  false
+end
