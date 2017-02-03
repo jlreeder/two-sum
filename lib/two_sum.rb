@@ -11,7 +11,6 @@ end
 
 def okay_two_sum?(arr, target)
   sorted = arr.sort
-
   idx1 = 0
   idx2 = arr.length - 1
 
@@ -27,4 +26,8 @@ def okay_two_sum?(arr, target)
   end
 
   false
+end
+
+def good_two_sum?(arr, target)
+  
 end
