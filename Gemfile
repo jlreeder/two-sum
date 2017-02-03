@@ -1,3 +1,3 @@
-require 'byebug'
-require 'pry'
-require 'rspec'
+gem 'byebug'
+gem 'pry'
+gem 'rspec'
